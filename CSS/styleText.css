@@ -16,23 +16,3 @@ body {
     
     padding: 0em 2em 4em;
 }
-p{
-    text-align:center;
-}
-
-.links{
-    width: 200px;
-    float: left; 
-    background-color: lightblue;
-}
-.info
-{
-  float: left; 
-   margin-top:67px;
-}
-
-footer
-{  
-    align-items:center;
-    background-color: lightblue;
-}
