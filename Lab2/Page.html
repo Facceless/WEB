@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link rel="stylesheet" href="style.css">
+    <title> Lab2</title>
+</head>
+<body>
+    <div class="initial">
+        <h3>Введите координаты прямоугольника</h3>
+        <p> А= <input type="text" id="A" /> </p>
+        <p> B= <input type="text" id="B" /> </p>
+        <p>
+            <input type = "button" id ="delete" onclick="data.clear()" value="Удалить"/>
+            <input type="button" id="random" onclick="data.addRandom()" value="Случайные координаты" />
+        </p>
+    </div>
+
+    <div class="Change">
+        <p>
+            Изменить стороны на  <input type="text" id="a" /> %
+            <input type="button" onclick="data.change()" value="Изменить" />
+        </p>
+
+
+        <p>
+            
+            <input type="button" onclick="data.add(document.getElementById('A').value, document.getElementById('B').value)" value="Создать строку" />
+        </p>
+    </div> 
+
+    <table border="1">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>A</th>
+                <th>B</th>
+                <th>Diagonal</th>
+                <th>Perimeter</th>
+                <th>Square</th>
+                <th> Delete</th>
+            </tr>
+        </thead>
+        <tbody id="triangles"></tbody>
+    </table>
+
+
+    <script src="Rectangle.js"></script>
+</body>
+</html>
